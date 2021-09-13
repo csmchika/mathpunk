@@ -21,6 +21,7 @@ body {
   max-width: 1100px;
 
 }
+
 a {
   text-decoration: none;
   &:hover{
@@ -33,6 +34,7 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+
 header {
   .header-block {
     @extend .flex;
@@ -159,6 +161,8 @@ header {
 
   }
 }
+
+.courses
 
 
 
