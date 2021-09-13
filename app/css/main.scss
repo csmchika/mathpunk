@@ -162,7 +162,85 @@ header {
   }
 }
 
-.courses
+.courses {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  h2 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #FFB800;
+    margin-bottom: 60px;
+    &::after {
+      margin-left: 10px;
+      content: "курсы";
+      display: inline;
+      color: transparent;
+      -webkit-text-stroke: 1px white;
+    }
+  }
+  .courses-items {
+    @extend .flex;
+    .course-item {
+      width: 252px;
+      height: 350px;
+      position: relative;
+      h3 {
+        position: absolute;
 
+        font-weight: 600;
+        font-size: 18px;
+        color: transparent;
+        -webkit-text-stroke: 1px #FFB800;
+      }
+      img {
+        position: absolute;
+        top: 18px;
+        left: 13px;
+        z-index: -1;
+      }
+      p {
+        font-size: 12px;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 125px;
+        left: 52px;
+      }
+      a {
+        position: absolute;
+        top: 340px;
+        left: 137px;
+        font-weight: 300;
+        font-size: 14px;
+        color: #000000;
+        background: #FFB800;
+        border-radius: 7px 0 7px 7px;
+        padding: 12px 30px;
+        transition: all .6s ease;
+        &:hover {
+          transform: translateY(-3px) scale(1.05);
+        }
+      }
+
+      &:nth-child(2) {
+        p {
+          top: 178px;
+          left: 48px;
+        }
+      }
+      &:nth-child(3) {
+        p {
+          top: 145px;
+          left: 24px;
+        }
+      }
+      &:last-child {
+        p {
+          top: 163px;
+          left: 29px;
+        }
+      }
+    }
+  }
+}
 
 
