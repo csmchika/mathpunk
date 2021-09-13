@@ -35,15 +35,16 @@ a {
   align-items: center;
 }
 
+.logo {
+  letter-spacing: 0.205em;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+
 header {
   .header-block {
     @extend .flex;
     margin-top: 60px;
-    .logo {
-      letter-spacing: 0.205em;
-      text-transform: uppercase;
-      margin-right: auto;
-    }
 
     ul {
       list-style: none;
@@ -237,6 +238,76 @@ header {
         p {
           top: 163px;
           left: 29px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: #000000;
+  padding: 100px 0;
+  .footer-block {
+    @extend .flex;
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 65px;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: initial;
+        li {
+          margin-bottom: 15px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          a {
+            font-size: 15px;
+            color: #FFFFFF;
+
+          }
+        }
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 60px;
+
+      a {
+        margin-bottom: 10px;
+      }
+      a:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-left: auto;
+
+      a {
+        color: #FFFFFF;
+
+        &:first-child {
+          font-weight: 300;
+          padding: 12px 24px;
+          border: 1px solid #FFFFFF;
+          border-radius: 7px 7px 0 7px;
+          margin-bottom: 15px;
+        }
+
+        &:last-child {
+          margin-top: 15px;
         }
       }
     }
