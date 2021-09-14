@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+  background-color: #1B292D;
+  background-image: url(/img/rectsback.svg);
+}
+
+.container {
+  padding: 0;
+  max-width: 1100px;
+
+}
+
+a {
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  letter-spacing: 0.205em;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+
+.header-block {
+  @extend .flex;
+  margin-top: 60px;
+  margin-bottom: 70px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: initial;
+
+    li {
+      display: inline-block;
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        font-size: 15px;
+        color: #FFFFFF;
+        font-weight: 500;
+
+        &::after {
+          content: "";
+          width: 0;
+          display: block;
+          height: 2px;
+          background: #FFDA7C;
+          box-shadow: 0 0 10px #FFB800;
+          transition: all .3s ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .enter {
+    margin-left: 182px;
+
+    .login {
+      background: #FFB800;
+      border-radius: 7px 0 7px 7px;
+      padding: 5px 28px;
+
+      a {
+        letter-spacing: 0.05em;
+        color: #000000;
+        font-size: 16px;
+        line-height: 140%;
+      }
+    }
+  }
+}
+
+.register {
+  height: 500px;
+  background-image: url("/img/bgreg.png");
+  padding: 60px 405px;
+  .register-block {
+    margin: 0;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 15px;
+    padding-top: 50px;
+    padding-right: 94px;
+    max-width: 729px;
+    h2 {
+      padding-left: 364px;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 37px;
+      letter-spacing: -0.02em;
+      color: #000000;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: inherit;
+        background: #000000;
+      }
+
+    }
+    .form-wrap {
+      @extend .flex;
+      justify-content: space-around;
+
+      .login {
+        margin-right: 77px;
+        margin-left: 131px;
+        button {
+          padding: 10px 35px;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: -0.02em;
+          color: #000000;
+          background: #FFB800;
+          border-radius: 7px;
+        }
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        .form-item {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 25px;
+
+
+          input {
+            margin-left: auto;
+            width: 350px;
+            height: 37px;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 7px;
+          }
+          &:first-child {
+            margin-top: 35px;
+          }
+          &:last-child {
+            margin-bottom: 35px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+footer {
+  background: #000000;
+  padding: 100px 0;
+  .footer-block {
+    @extend .flex;
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 65px;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: initial;
+        li {
+          margin-bottom: 15px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          a {
+            font-size: 15px;
+            color: #FFFFFF;
+
+          }
+        }
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 60px;
+
+      a {
+        margin-bottom: 10px;
+      }
+      a:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-left: auto;
+
+      a {
+        color: #FFFFFF;
+
+        &:first-child {
+          font-weight: 300;
+          padding: 12px 24px;
+          border: 1px solid #FFFFFF;
+          border-radius: 7px 7px 0 7px;
+          margin-bottom: 15px;
+        }
+
+        &:last-child {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
