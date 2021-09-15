@@ -1,1 +1,1 @@
-function slowScroll(o){return $("html, body").animate({scrollTop:$(o).offset().top-50},500),!1}
+function slowScroll(o){return $("html, body").animate({scrollTop:$(o).offset().top-50},500),!1}(new WOW).init();

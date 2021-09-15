@@ -49,22 +49,22 @@
                 <div class="login">
                     <button type="submit" class="">Войти</button>
                 </div>
-                <form method="post" action="">
+                <form method="post" action="" name="formReg">
                     <div class="form-item">
-                        <img src="/img/required.svg" alt="Заполнено" class="required">
-                        <input type="text" name="name" required placeholder="Имя пользователя:">
+                        <img src="/img/required.svg" alt="Заполнено" class="required" id="reqname">
+                        <input type="text" name="name" required placeholder="Имя пользователя:" id="name">
                     </div>
                     <div class="form-item">
-                        <img src="/img/required.svg" alt="Заполнено" class="required">
-                        <input type="email" name="email" required placeholder="E-mail:">
+                        <img src="/img/required.svg" alt="Заполнено" class="required" id="reqmail">
+                        <input type="email" name="email" required placeholder="E-mail:" id="mail">
                     </div>
                     <div class="form-item">
-                        <img src="/img/required.svg" alt="Заполнено" class="required">
-                        <input type="password" name="password1" required placeholder="Пароль:">
+                        <img src="/img/required.svg" alt="Заполнено" class="requiredPass">
+                        <input type="password" name="password1" required placeholder="Пароль:" id="pass1">
                     </div>
                     <div class="form-item">
-                        <img src="/img/required.svg" alt="Заполнено" class="required">
-                        <input type="password" name="password2" required placeholder="Повторите пароль:">
+                        <img src="/img/required.svg" alt="Заполнено" class="requiredPass">
+                        <input type="password" name="password2" required placeholder="Повторите пароль:" id="pass2">
                     </div>
                 </form>
             </div>
@@ -107,5 +107,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/register.js"> </script>
 </body>
 </html>
