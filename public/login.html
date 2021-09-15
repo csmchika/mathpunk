@@ -5,10 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Регистрация</title>
+    <title>Вход</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/register.min.css">
+    <link rel="stylesheet" href="/css/login.min.css">
 </head>
 <body>
     <header>
@@ -35,38 +35,28 @@
                     </ul>
                 </nav>
                 <div class="enter">
-                    <div class="header-login">
-                        <a href="login.html" class="">Вход</a>
+                    <div class="header-register">
+                        <a href="register.html" class="">Регистрация</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="register-form">
-        <div class="register-block">
-            <h2>Регистрация:</h2>
+    <section class="login-form">
+        <div class="login-block">
+            <h2>Вход:</h2>
             <div class="form-wrap">
-                <div class="login">
-                    <button type="submit" class="">Зарегистрироваться</button>
-                </div>
                 <form method="post" action="" name="formReg">
                     <div class="form-item">
-                        <img src="/img/required.svg" alt="Заполнено" class="required" id="reqname">
                         <input type="text" name="name" required placeholder="Имя пользователя:" id="name">
                     </div>
                     <div class="form-item">
-                        <img src="/img/required.svg" alt="Заполнено" class="required" id="reqmail">
-                        <input type="email" name="email" required placeholder="E-mail:" id="mail">
-                    </div>
-                    <div class="form-item">
-                        <img src="/img/required.svg" alt="Заполнено" class="requiredPass">
                         <input type="password" name="password1" required placeholder="Пароль:" id="pass1">
                     </div>
-                    <div class="form-item">
-                        <img src="/img/required.svg" alt="Заполнено" class="requiredPass">
-                        <input type="password" name="password2" required placeholder="Повторите пароль:" id="pass2">
-                    </div>
                 </form>
+                <div class="login">
+                    <button type="submit" class="">Войти</button>
+                </div>
             </div>
         </div>
     </section>

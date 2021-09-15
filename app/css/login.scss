@@ -3,42 +3,28 @@
 
 .header-block {
   .enter {
-    margin-left: 154px;
-    .header-login {
-      background: #FFB800;
-      border-radius: 7px 0 7px 7px;
-      padding: 7px 28px;
+    margin-left: 115px;
 
-      a {
-        letter-spacing: 0.05em;
-        color: #000000;
-         
-        &::after {
-          display: none;
-        }
-
-      }
-    }
   }
 }
 
-.register-form {
+.login-form {
   height: 500px;
   background-image: url("/img/bgreg.png");
   padding-top: 60px;
   padding-bottom: 60px;
-  .register-block {
+  .login-block {
     margin: 0 auto;
     position: relative;
     background: rgba(255, 255, 255, 0.65);
     border-radius: 15px;
     padding-top: 50px;
-    padding-right: 94px;
+    padding-left: 94px;
     width: 729px;
     h2 {
       margin: 0;
       position: absolute;
-      left: 364px;
+      right: 555px;
       font-weight: 600;
       font-size: 30px;
       line-height: 37px;
@@ -49,23 +35,24 @@
         content: "";
         display: block;
         height: 2px;
-        width: inherit;
+        width: 100%;
         background: #000000;
       }
 
     }
     .form-wrap {
       @extend .flex;
-      justify-content: space-between;
+      flex-direction: column;
+      align-items: flex-start;
 
       .login {
-        margin-right: 41px;
-        margin-left: 65px;
+        margin-top: 50px;
+        margin-bottom: 55px;
         button {
           border: 0;
           padding: 10px 35px;
           font-weight: 300;
-          font-size: 16px;
+          font-size: 14px;
           line-height: 17px;
           letter-spacing: -0.02em;
           color: #000000;
@@ -84,8 +71,7 @@
 
         .form-item {
           display: flex;
-          gap: 10px;
-          margin-bottom: 25px;
+          gap: 25px;
           .required {
             display: none;
           }
@@ -93,7 +79,7 @@
             display: none;
           }
           input {
-            margin-left: auto;
+            margin-right: auto;
             width: 350px;
             height: 37px;
             background: rgba(255, 255, 255, 0.5);
@@ -104,10 +90,8 @@
 
           }
           &:first-child {
-            margin-top: 74px;
-          }
-          &:last-child {
-            margin-bottom: 35px;
+            margin-top: 92px;
+            margin-bottom: 25px;
           }
         }
       }
